@@ -90,14 +90,14 @@ $res= $input2->diff($input1)->d;
     <title>Document</title>
 </head>
 <body>
-    <form action=''>
+    <form method="post">
     <div class="form-label-group">
-                <input type="text" class="form-control"name="name" value="<?php $name?>" placeholder="Enter name " required autofocus>
-                <button type="submit" onClick="show()">Submit</button>
+                <input type="text" class="form-control" name="name" value=" " placeholder="Enter name " required autofocus>
+                <button type="submit" >Submit</button>
                 <?php
-                function show(){
+                $name=$_POST['name'];
                     echo "<h3> $name <h3/>";
-                }
+                
                 ?>
               </div>
     
